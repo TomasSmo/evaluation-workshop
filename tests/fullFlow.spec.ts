@@ -12,8 +12,6 @@ test.beforeEach('setup', async ({page}) =>{
     await loginPage.goTo();
 })
 
-//await loginPage.enterCredentialsAndLogIn(process.env.USER_EMAIL!, process.env.USER_PASSWORD!);
-//SHOULD BE THIS!
 test('Order some kind of a dish on Tuesday or Wednesday and receive a success notification', async ({ page }) => {
     await loginPage.enterCredentialsAndLogIn('tomas.smociukas@sft.com', 'student893');
 
